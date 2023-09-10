@@ -79,7 +79,7 @@ const createEditorial = async (req, res, next) => {
       throw error;
     }
   } catch (error) {
-    console.error(error); // Agrega esta línea para registrar el error en la consola
+    console.error(error);
     next(error);
   }
 };
