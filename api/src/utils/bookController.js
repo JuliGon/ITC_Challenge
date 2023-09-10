@@ -2,7 +2,7 @@ const { Op } = require("sequelize");
 const { Book } = require("../db");
 
 // Función para obtener todos los libros y aplicar filtros de nombre y descripción
-async function getAllBooks(req, res, next) {
+const getAllBooks = async (req, res, next) => {
   const { name, description } = req.query;
   let whereClause = {};
 
@@ -36,7 +36,7 @@ async function getAllBooks(req, res, next) {
 }
 
 // Función para buscar un libro por su ID
-async function getBookById(req, res, next) {
+const getBookById = async (req, res, next) => {
   const { id } = req.params;
 
   try {
@@ -56,7 +56,7 @@ async function getBookById(req, res, next) {
 
 
 // Función para crear un nuevo libro o libros
-async function createBook(req, res, next) {
+const createBook = async (req, res, next) => {
 	try {
 		const requestData = req.body;
 
@@ -98,7 +98,7 @@ async function createBook(req, res, next) {
 }
 
 // Función para eliminar un libro por su ID
-async function deleteBook(req, res, next) {
+const deleteBook = async (req, res, next) => {
 	const { id } = req.params;
 	try {
 		const deletedBook = await Book.destroy({
@@ -116,7 +116,7 @@ async function deleteBook(req, res, next) {
 }
 
 // Función para actualizar un libro por su ID
-async function updateBook(req, res, next) {
+const updateBook = async (req, res, next) => {
 	const { id } = req.params;
 	const { name, author, description, image_url, price, editorialId } = req.body;
 

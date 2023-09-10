@@ -1,7 +1,7 @@
 const { Editorial } = require("../db");
 
 // Función para obtener todas las editoriales
-async function getAllEditorials(req, res, next) {
+const getAllEditorials = async (req, res, next) => {
 	try {
 		const editorials = await Editorial.findAll();
 
@@ -18,7 +18,7 @@ async function getAllEditorials(req, res, next) {
 }
 
 // Función para obtener una editorial por su ID (con ID como parámetro de consulta)
-async function getEditorialById(req, res, next) {
+const getEditorialById = async (req, res, next) => {
 	const { id } = req.params;
 	try {
 		const editorial = await Editorial.findByPk(id);
@@ -34,7 +34,7 @@ async function getEditorialById(req, res, next) {
 }
 
 // Función para crear una nueva editorial o editoriales
-async function createEditorial(req, res, next) {
+const createEditorial = async (req, res, next) => {
 	try {
 		const requestData = req.body;
 
