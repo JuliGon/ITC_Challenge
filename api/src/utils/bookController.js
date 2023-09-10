@@ -1,43 +1,59 @@
 const { Op } = require("sequelize");
 const { Book } = require("../db");
 
-// Función para obtener libros con filtros
-async function getBooks(req, res, next) {
-	const { name, description, id } = req.query;
-	let whereClause = {};
+// Función para obtener todos los libros y aplicar filtros de nombre y descripción
+async function getAllBooks(req, res, next) {
+  const { name, description } = req.query;
+  let whereClause = {};
 
-	if (id) {
-		whereClause.id = id;
-	}
+  if (name) {
+    whereClause.name = {
+      [Op.iLike]: `%${name}%`,
+    };
+  }
 
-	if (name) {
-		whereClause.name = {
-			[Op.iLike]: `%${name}%`,
-		};
-	}
+  if (description) {
+    whereClause.description = {
+      [Op.iLike]: `%${description}%`,
+    };
+  }
 
-	if (description) {
-		whereClause.description = {
-			[Op.iLike]: `%${description}%`,
-		};
-	}
+  try {
+    const books = await Book.findAll({
+      where: whereClause,
+    });
 
-	try {
-		const books = await Book.findAll({
-			where: whereClause,
-		});
+    if (books.length === 0) {
+      const error = new Error("Books not found");
+      error.status = 404;
+      throw error;
+    }
 
-		if (books.length === 0) {
-			const error = new Error("Books not found");
-			error.status = 404;
-			throw error;
-		}
-
-		res.json(books);
-	} catch (error) {
-		next(error);
-	}
+    res.json(books);
+  } catch (error) {
+    next(error);
+  }
 }
+
+// Función para buscar un libro por su ID
+async function getBookById(req, res, next) {
+  const { id } = req.params;
+
+  try {
+    const book = await Book.findByPk(id);
+
+    if (!book) {
+      const error = new Error("Book not found");
+      error.status = 404;
+      throw error;
+    }
+
+    res.json(book);
+  } catch (error) {
+    next(error);
+  }
+}
+
 
 // Función para crear un nuevo libro o libros
 async function createBook(req, res, next) {
@@ -133,7 +149,8 @@ async function updateBook(req, res, next) {
 }
 
 module.exports = {
-	getBooks,
+	getAllBooks,
+	getBookById,
 	createBook,
 	deleteBook,
 	updateBook,

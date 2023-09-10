@@ -1,9 +1,12 @@
 const express = require("express");
 const router = express.Router();
-const bookController = require("../utils/bookController"); // Importa el controlador de libros
+const bookController = require("../utils/bookController"); 
 
-// Ruta para obtener todos los libros y filtrar por nombre, descripción e ID
-router.get("/", bookController.getBooks);
+// Ruta para obtener un libro por su ID
+router.get("/:id", bookController.getBookById);
+
+// Ruta para obtener todos los libros y filtrar por nombre y descripción
+router.get("/", bookController.getAllBooks);
 
 // Ruta para crear un nuevo libro o libros
 router.post("/", bookController.createBook);
