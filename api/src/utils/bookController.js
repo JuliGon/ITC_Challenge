@@ -110,7 +110,6 @@ const createBook = async (req, res, next) => {
 			throw error;
 		}
 	} catch (error) {
-		console.error(error);
 		next(error);
 	}
 };
@@ -127,7 +126,7 @@ const deleteBook = async (req, res, next) => {
 			error.status = 404;
 			throw error;
 		}
-		res.json({ message: "Book deleted successfully" });
+		res.json({ message: "Book successfully deleted" });
 	} catch (error) {
 		next(error);
 	}

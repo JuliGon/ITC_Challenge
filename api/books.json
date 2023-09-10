@@ -5,6 +5,46 @@
 		"description": "En Rayuela (1963), Julio Cortázar supo condensar sus obsesiones estéticas, literarias y vitales a partir de un mosaico diverso, prof undo, inagotable que, a su vez, refleja de forma maravillosa lo más esencial de su época. El amor turbulento de Oliveira y La Maga, los amigos del Club de la Serpiente, las impredecibles caminatas por París -la ciudad que promete el cielo pero puede conducir al infierno-, encuentran su contracara en la aventura protagonizada por Oliveira, Talita y Traveler en Buenos Aires. Rayuela es un libro único, abierto a múltiples lecturas, lúdico, complejo, lleno de riesgo y humor, de una originalidad sin precedentes y un talento innato para influir en las futuras generaciones.",
 		"image_url": "https://contentv2.tap-commerce.com/cover/large/9789877382570_1.jpg?id_com=1113",
 		"price": 49,
-		"editorialId": 3
+		"editorialId": 14
+	},
+	{
+		"name": "Juego de Tronos (Canción de Hielo y Fuego 1)",
+		"author": "George RR Martin",
+		"description": "Juego de Tronos es el primer volumen de Canción de hielo y fuego, la monumental saga de fantasía épica del escritor George R. R. Martin que ha vendido más de 20 millones de ejemplares en todo el mundo. De la saga que inspiró la filmación de la aclamada serie televisiva de HBO: Game of Thrones. En el legendario mundo de los Siete Reinos, donde el verano puede durar décadas y el invierno toda una vida, y donde rastros de una magia inmemorial surgen en los rincones más sombríos, la tierra del norte, Invernalia, está resguardada por un colosal muro de hielo que detiene a fuerzas oscuras y sobrenaturales. En este majestuoso escenario, Lord Stark y su familia se encuentran en el centro de un conflicto que desatará todas las pasiones: la traición y la lealtad, la compasión y la sed de venganza, el amor y el poder, la lujuria y el incesto, todo ello para ganar la más mortal de las batallas: el trono de hierro, una poderosa trampa que atrapará a los personajes... y al lector.",
+		"image_url": "https://contentv2.tap-commerce.com/cover/large/9789877251470_1.jpg?id_com=1113",
+		"price": 99,
+		"editorialId": 24
+	},
+	{
+		"name": "Choque de Reyes (Canción de Hielo y Fuego 2)",
+		"author": "George R.R. Martin",
+		"description": "Cuatro nobles se proclaman, a la vez, reyes legítimos, y las tierras de Poniente se estremecen entre guerras y traiciones. Un horro presidido por la más ominosa de las señales: un inmenso cometa color sangre suspendido en el cielo.",
+		"image_url": "https://contentv2.tap-commerce.com/cover/large/9789877251487_1.jpg?id_com=1113",
+		"price": 99,
+		"editorialId": 24
+	},
+	{
+		"name": "Tormenta de Espadas (Canción de Hielo y Fuego 3)",
+		"author": "George R.R. Martin",
+		"description": "Arrasados por la guerra, los Siete Reinos pronto sufrirán el larguísimo invierno que se predice como inusitadamente crudo. Y mientras la violencia y el clima empeoran, los personajes entrañables e infames que ya conocemos protagonizan feroces batallas y perversas intrigas palaciegas. Joffrey, el cruel rey adolescente, hace de las suyas ante el azoro de los propios miembros de su clan, los Lannister; Robb Stark, rey de Invernalia, ha ganado todos sus combates, pero está perdiendo la guerra; Daenerys, la princesa de los tres dragones, ya está al frente de un ejército de mercenarios para cumplir su destino: recuperar el reino del cual fue despojada.",
+		"image_url": "https://contentv2.tap-commerce.com/cover/large/9789877251579_1.jpg?id_com=1113",
+		"price": 99,
+		"editorialId": 24
+	},
+	{
+		"name": "Festín de Cuervos (Canción de Hielo y Fuego 4)",
+		"author": "George R.R. Martin",
+		"description": "Luego de siglos de combates descarnados, los siete poderes que dividen la tierra se han diezmado unos a otros hasta alcanzar una difícil tregua. Muy pocos reclamos legítimos existen ya por el Trono de Hierro, y la guerra que ha convertido al mundo en poco más que un desierto al fin ha terminado. O eso parece. Pero no pasa mucho tiempo antes de que los sobrevivientes, los proscritos, los renegados y los carroñeros de los Siete Reinos se reúnan.",
+		"image_url": "https://contentv2.tap-commerce.com/cover/large/9789877251586_1.jpg?id_com=1113",
+		"price": 99,
+		"editorialId": 24
+	},
+	{
+		"name": "Danza de Dragones (Canción de Hielo y Fuego 5)",
+		"author": "George R.R. Martin",
+		"description": "Después de una colosal batalla, el futuro de los Siete Reinos pende de un hilo, acuciado por nuevas amenazas que emergen de todos los rincones y en todas direcciones.",
+		"image_url": "https://contentv2.tap-commerce.com/cover/large/9789877251562_1.jpg?id_com=1113",
+		"price": 99,
+		"editorialId": 24
 	}
 ]

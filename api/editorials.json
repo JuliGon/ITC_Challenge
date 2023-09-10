@@ -60,7 +60,7 @@
     "logo_url": "https://www.vectorlogo.es/wp-content/uploads/2019/04/logo-vector-editorial-anagrama.jpg"
   },
 	{
-		"name": "Plaza Janés",
+		"name": "Plaza & Janés",
 		"logo_url": "https://www.penguinrandomhousegrupoeditorial.com/wp-content/uploads/2020/12/sellos_PLAZA-Y-JANES-parrilla.png"
 	},
 	{
@@ -90,5 +90,9 @@
   {
     "name": "Crítica",
     "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/eaf82b6f-e825-4581-a6a9-904dea2e6464-critica.svg"
+  },
+  {
+    "name": "Debolsillo",
+    "logo_url": "https://www.penguinrandomhousegrupoeditorial.com/wp-content/uploads/2020/12/sellos_DE-BOLSILLO-parrilla.png"
   }
 ]

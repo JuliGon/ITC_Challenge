@@ -3,7 +3,7 @@ const router = express.Router();
 const { Editorial } = require("../db");
 const editorialController = require("../utils/editorialController")
 
-// Ruta para obtener una editorial por su ID (hacer que el parámetro id sea opcional)
+// Ruta para obtener una editorial por su ID 
 router.get("/:id", editorialController.getEditorialById);
 
 // Ruta para obtener todas las editoriales
