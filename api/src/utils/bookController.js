@@ -50,7 +50,7 @@ async function createBook(req, res, next) {
 			res.json(createdBooks);
 		} else if (typeof requestData === "object") {
 			// Si requestData es un objeto, crea un libro individual
-			const { name, author, description, image_url, price } = requestData;
+			const { name, author, description, image_url, price, editorialId } = requestData;
 			
 			const existingBook = await Book.findOne({
 				where: { name: { [Op.iLike]: `%${name}%` } },
@@ -68,6 +68,7 @@ async function createBook(req, res, next) {
 				description: description,
 				image_url: image_url,
 				price: price,
+				editorialId: editorialId,
 			});
 			res.status(201).json(newBook);
 		} else {
@@ -101,7 +102,7 @@ async function deleteBook(req, res, next) {
 // Función para actualizar un libro por su ID
 async function updateBook(req, res, next) {
 	const { id } = req.params;
-	const { name, author, description, image_url, price } = req.body;
+	const { name, author, description, image_url, price, editorialId } = req.body;
 
 	try {
 		const book = await Book.findByPk(id);
@@ -118,6 +119,7 @@ async function updateBook(req, res, next) {
 			description,
 			image_url,
 			price,
+			editorialId
 		});
 
 		const updatedBook = await Book.findOne({
