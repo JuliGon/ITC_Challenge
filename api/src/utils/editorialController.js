@@ -68,8 +68,7 @@ const createEditorial = async (req, res, next) => {
 			const editorials = await bulkCreateEditorials(requestData);
 			res.json(editorials);
 		} else if (typeof requestData === "object") {
-			const { name, logo_url } = requestData;
-			const newEditorial = await createIndividualEditorial(name, logo_url);
+			const newEditorial = await createIndividualEditorial(requestData);
 			res.status(201).json(newEditorial);
 		} else {
 			const error = new Error(
