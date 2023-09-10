@@ -110,6 +110,7 @@ const createBook = async (req, res, next) => {
 			throw error;
 		}
 	} catch (error) {
+		console.error(error);
 		next(error);
 	}
 };
