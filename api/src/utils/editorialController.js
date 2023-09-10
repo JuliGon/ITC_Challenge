@@ -1,4 +1,5 @@
 const { Editorial } = require("../db");
+const { Op } = require("sequelize");
 
 // Función para obtener todas las editoriales
 const getAllEditorials = async (req, res, next) => {
@@ -83,6 +84,7 @@ const createEditorial = async (req, res, next) => {
     next(error);
   }
 };
+
 
 
 module.exports = {
