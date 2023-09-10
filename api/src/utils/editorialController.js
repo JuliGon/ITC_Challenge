@@ -35,23 +35,24 @@ const getEditorialById = async (req, res, next) => {
 
 // Función para crear una nueva editorial
 const createIndividualEditorial = async ({ name, logo_url }) => {
-	const existingEditorial = await Editorial.findOne({
-		where: { name: { [Op.iLike]: `%${name}%` } },
-	});
+  const existingEditorial = await Editorial.findOne({
+    where: { name: { [Op.iLike]: `%${name}%` } },
+  });
 
-	if (existingEditorial) {
-		const error = new Error("The editorial already exists");
-		error.status = 404;
-		throw error;
-	}
+  if (existingEditorial) {
+    const error = new Error("The editorial already exists");
+    error.status = 404;
+    throw error;
+  }
 
-	const newEditorial = await Editorial.create({
-		name: name,
-		logo_url: logo_url,
-	});
+  const newEditorial = await Editorial.create({
+    name: name,
+    logo_url: logo_url,
+  });
 
-	return newEditorial;
+  return newEditorial;
 };
+
 
 // Función para crear editoriales a partir de un array
 const bulkCreateEditorials = async (editorialsData) => {
@@ -61,27 +62,28 @@ const bulkCreateEditorials = async (editorialsData) => {
 
 // Función para crear una nueva editorial o editoriales
 const createEditorial = async (req, res, next) => {
-	try {
-		const requestData = req.body;
+  try {
+    const requestData = req.body;
 
-		if (Array.isArray(requestData)) {
-			const editorials = await bulkCreateEditorials(requestData);
-			res.json(editorials);
-		} else if (typeof requestData === "object") {
-			const newEditorial = await createIndividualEditorial(requestData);
-			res.status(201).json(newEditorial);
-		} else {
-			const error = new Error(
-				"Invalid data format. Request data must be an object or an array."
-			);
-			error.status = 400;
-			throw error;
-		}
-	} catch (error) {
-		console.error(error);
-		next(error);
-	}
+    if (Array.isArray(requestData)) {
+      const editorials = await bulkCreateEditorials(requestData);
+      res.json(editorials);
+    } else if (typeof requestData === "object") {
+      const newEditorial = await createIndividualEditorial(requestData); // Pasa el objeto completo
+      res.status(201).json(newEditorial);
+    } else {
+      const error = new Error(
+        "Invalid data format. Request data must be an object or an array."
+      );
+      error.status = 400;
+      throw error;
+    }
+  } catch (error) {
+    console.error(error);
+    next(error);
+  }
 };
+
 
 module.exports = {
 	getAllEditorials,
