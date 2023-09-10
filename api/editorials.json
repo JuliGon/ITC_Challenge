@@ -66,5 +66,29 @@
 	{
 		"name": "Salamandra",
 		"logo_url": "https://static.wixstatic.com/media/77a733_91e3df7bfbf645eebb194b0a19fe8fff.jpg/v1/fill/w_1208,h_424,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/77a733_91e3df7bfbf645eebb194b0a19fe8fff.jpg"
-	}
+	},
+  {
+    "name": "Libros Cúpula",
+    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/11543da4-72b9-4ab8-9269-97757ef200e7-Cupula.svg"
+  },
+  {
+    "name": "Luciérnaga",
+    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/56e4e22c-6a1a-4670-9449-b33c020d23ff-Luciernaga.svg"
+  },
+  {
+    "name": "Emecé Editores",
+    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/96748db4-1c6b-4a98-9b3f-3036c5b375ae-emece-editores_logo.svg"
+  },
+  {
+    "name": "El Aleph Editores",
+    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/ecee009b-efce-42e5-a640-75f4da4b6f08-aleph-logo.svg"
+  },
+  {
+    "name": "Para Dummies",
+    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/fe662d87-7e4d-4b69-b4a9-e204858d3a3c-logo_para-dummies.svg"
+  },
+  {
+    "name": "Crítica",
+    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/eaf82b6f-e825-4581-a6a9-904dea2e6464-critica.svg"
+  }
 ]

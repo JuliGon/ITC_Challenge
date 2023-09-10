@@ -54,7 +54,6 @@ const getBookById = async (req, res, next) => {
   }
 }
 
-
 // Función para crear un nuevo libro o libros
 const createBook = async (req, res, next) => {
 	try {
