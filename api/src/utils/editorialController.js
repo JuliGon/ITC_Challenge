@@ -74,7 +74,7 @@ const getEditorialById = async (req, res, next) => {
 // }
 
 const validateData = (data) => {
-  if (Array.isArray(data) || typeof data !== "object") {
+  if (!Array.isArray(data) || typeof data !== "object") {
     const error = new Error(
       "Invalid data format. Request data must be an object or an array."
     );
