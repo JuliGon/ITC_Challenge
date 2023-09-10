@@ -9,6 +9,7 @@ require("./db.js");
 server.use(cors());
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
+server.use(require('morgan')('dev'));
 server.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Credentials', 'true');
