@@ -4,23 +4,23 @@ const fs = require("fs");
 const path = require("path");
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME, DB_URL } = process.env;
 
-// const sequelize = new Sequelize(
-//   `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`,
-//   {
-//     logging: false,
-//     native: false,
-//     protocol: 'postgres',
-//     dialectOptions: {
-//       ssl: false,
-//     },
-//   }
-// );
+const sequelize = new Sequelize(
+  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`,
+  {
+    logging: false,
+    native: false,
+    protocol: 'postgres',
+    dialectOptions: {
+      ssl: false,
+    },
+  }
+);
 
-const sequelize = new Sequelize(DB_URL, {
-  logging: false, 
-  native: false, 
-	protocol: 'postgres',
-});
+// const sequelize = new Sequelize(DB_URL, {
+//   logging: false, 
+//   native: false, 
+// 	protocol: 'postgres',
+// });
 
 const basename = path.basename(__filename);
 
@@ -40,18 +40,29 @@ fs.readdirSync(path.join(__dirname, "/models"))
 modelDefiners.forEach((model) => model(sequelize));
 
 // En sequelize.models están todos los modelos importados como propiedades
-// Para relacionarlos hacemos un destructuring
-const { Book, Editorial } = sequelize.models;
+const { Book, Editorial, User } = sequelize.models;
 
 // Relaciones
 Book.belongsTo(Editorial, {
   foreignKey: "editorialId",
   as: "editorial",
 });
+
 Editorial.hasMany(Book, {
   foreignKey: "editorialId",
   as: "books",
 });
+
+User.hasMany(Book, {
+  foreignKey: 'userId',
+  as: 'books', 
+});
+
+Book.belongsTo(User, {
+  foreignKey: 'userId',
+  as: 'user', 
+});
+
 
 
 module.exports = {

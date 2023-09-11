@@ -8,7 +8,7 @@ module.exports = (sequelize) => {
 				allowNull: false,
 				autoIncrement: true,
 				primaryKey: true,
-				type: DataTypes.INTEGER
+				type: DataTypes.INTEGER,
 			},
 			name: {
 				allowNull: false,
@@ -36,6 +36,14 @@ module.exports = (sequelize) => {
 				references: {
 					model: "Editorials",
 					key: "id",
+				},
+			},
+			userId: {
+				allowNull: false,
+				type: DataTypes.INTEGER,
+				references: {
+					model: "Users",
+					key: "id", 
 				},
 			},
 		},
