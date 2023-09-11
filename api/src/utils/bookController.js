@@ -1,47 +1,6 @@
 const { Book } = require("../db");
 const { Op } = require("sequelize");
 
-/**
- * @swagger
- * components:
- *  schemas:
- *   Book:
- *    type: object
- *    properties:
- *      name:
- *        type: string
- *        description: Book name
- *      author:
- *        type: string
- *        description: Book author
- *      description:
- *        type: text
- *        description: Book description
- *      image_url:
- *        type: text
- *        description: Book cover
- *      price:
- *        type: integer
- *        description: Book price
- *      editorialId:
- *        type: integer
- *        description: Book publisher
- *    required:
- *      - name
- *      - author
- *      - description
- *      - image_url
- *      - price
- *      - editorialId
- *    example:
- *      name: Book example
- *      author: John Doe
- *      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
- *      image_url: https://example.com/image.png
- *      price: 49
- *      editorialId: 1
- */
-
 // Función para obtener todos los libros y aplicar filtros de nombre y descripción
 const getAllBooks = async (req, res, next) => {
 	const { name, description } = req.query;

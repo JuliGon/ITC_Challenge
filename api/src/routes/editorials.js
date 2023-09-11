@@ -8,7 +8,25 @@ const editorialController = require("../utils/editorialController")
  * tags:
  *   name: Editorial
  *   description: Editorial management
+ * components:
+ *  schemas:
+ *   Editorial:
+ *    type: object
+ *    properties:
+ *      name:
+ *        type: string
+ *        description: Editorial name
+ *      logo_url:
+ *        type: text
+ *        description: Editorial logo URL
+ *    required:
+ *      - name
+ *      - logo_url
+ *    example:
+ *      name: Editorial Example
+ *      logo_url: https://example.com/logo.png
  */
+
 
 /**
  * @swagger
