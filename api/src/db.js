@@ -40,7 +40,7 @@ fs.readdirSync(path.join(__dirname, "/models"))
 modelDefiners.forEach((model) => model(sequelize));
 
 // En sequelize.models están todos los modelos importados como propiedades
-const { Book, Editorial, User } = sequelize.models;
+const { Book, Editorial } = sequelize.models;
 
 // Relaciones
 Book.belongsTo(Editorial, {
@@ -51,16 +51,6 @@ Book.belongsTo(Editorial, {
 Editorial.hasMany(Book, {
   foreignKey: "editorialId",
   as: "books",
-});
-
-User.hasMany(Book, {
-  foreignKey: 'userId',
-  as: 'books', 
-});
-
-Book.belongsTo(User, {
-  foreignKey: 'userId',
-  as: 'user', 
 });
 
 
