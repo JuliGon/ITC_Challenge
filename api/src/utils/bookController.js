@@ -1,5 +1,4 @@
 const { Book } = require("../db");
-const sequelize = require("../db").conn;
 const { Op } = require("sequelize");
 
 // Función para obtener todos los libros y aplicar filtros de nombre y descripción
@@ -94,62 +93,26 @@ const bulkCreateBooks = async (booksData) => {
 
 // Función para crear un nuevo libro o libros
 const createBook = async (req, res, next) => {
-	try {
-		const requestData = req.body;
-		if (Array.isArray(requestData)) {
-			const books = await bulkCreateBooks(requestData);
- 			res.json(books);
-		} else if (typeof requestData === "object") {
-			const newBook = await createIndividualBook(requestData);
-			res.status(201).json(newBook);
-		} else {
-			const error = new Error(
-				"Invalid data format. Request data must be an object or an array."
-			);
-			error.status = 400;
-			throw error;
-		}
-	} catch (error) {
-		console.error(error);
-		next(error);
-	}
+ 	try {
+ 		const requestData = req.body;
+ 		if (Array.isArray(requestData)) {
+ 			const books = await bulkCreateBooks(requestData);
+  			res.json(books);
+ 		} else if (typeof requestData === "object") {
+ 			const newBook = await createIndividualBook(requestData);
+ 			res.status(201).json(newBook);
+ 		} else {
+ 			const error = new Error(
+ 				"Invalid data format. Request data must be an object or an array."
+ 			);
+ 			error.status = 400;
+ 			throw error;
+ 		}
+ 	} catch (error) {
+ 		console.error(error);
+ 		next(error);
+ 	}
 };
-
-// const createBook = async (req, res, next) => {
-// 	try {
-// 		const requestData = req.body;
-
-// 		// Inicia una transacción
-// 		const transaction = await sequelize.transaction();
-
-// 		try {
-// 			if (Array.isArray(requestData)) {
-// 				const books = await bulkCreateBooks(requestData, { transaction });
-// 				// Confirma la transacción si todo sale bien
-// 				await transaction.commit();
-// 				res.json(books);
-// 			} else if (typeof requestData === "object") {
-// 				const newBook = await createIndividualBook(requestData, { transaction });
-// 				// Confirma la transacción si todo sale bien
-// 				await transaction.commit();
-// 				res.status(201).json(newBook);
-// 			} else {
-// 				const error = new Error(
-// 					"Invalid data format. Request data must be an object or an array."
-// 				);
-// 				error.status = 400;
-// 				throw error;
-// 			}
-// 		} catch (error) {
-// 			// Si ocurre un error, haz un "rollback" de la transacción
-// 			await transaction.rollback();
-// 			throw error; // Lanza el error para que sea manejado por el middleware de errores
-// 		}
-// 	} catch (error) {
-// 		next(error);
-// 	}
-// };
-
 
 // Función para eliminar un libro por su ID
 const deleteBook = async (req, res, next) => {
