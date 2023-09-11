@@ -1,6 +1,27 @@
 const { Editorial } = require("../db");
 const { Op } = require("sequelize");
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *   Editorial:
+ *    type: object
+ *    properties:
+ *      name:
+ *        type: string
+ *        description: Editorial name
+ *      logo_url:
+ *        type: text
+ *        description: Editorial logo URL
+ *    required:
+ *      - name
+ *      - logo_url
+ *    example:
+ *      name: Editorial Example
+ *      logo_url: https://example.com/logo.png
+ */
+
 // Función para obtener todas las editoriales
 const getAllEditorials = async (req, res, next) => {
 	try {
