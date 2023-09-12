@@ -22,6 +22,9 @@ const bookController = require("../utils/bookController");
  *      description:
  *        type: text
  *        description: Book description
+ *      genre:
+ *        type: string
+ *        description: Book genre
  *      image_url:
  *        type: text
  *        description: Book cover
@@ -35,6 +38,7 @@ const bookController = require("../utils/bookController");
  *      - name
  *      - author
  *      - description
+ *      - genre
  *      - image_url
  *      - price
  *      - editorialId
@@ -42,6 +46,7 @@ const bookController = require("../utils/bookController");
  *      name: Book example
  *      author: John Doe
  *      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+ *      genre: Book genre
  *      image_url: https://example.com/image.png
  *      price: 49
  *      editorialId: 1
