@@ -16,15 +16,15 @@ const editorialController = require("../utils/editorialController")
  *      name:
  *        type: string
  *        description: Editorial name
- *      logo_url:
+ *      logo:
  *        type: text
  *        description: Editorial logo URL
  *    required:
  *      - name
- *      - logo_url
+ *      - logo
  *    example:
  *      name: Editorial Example
- *      logo_url: https://example.com/logo.png
+ *      logo: https://example.com/logo.png
  */
 
 

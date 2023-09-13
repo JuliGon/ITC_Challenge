@@ -60,7 +60,7 @@ const createIndividualBook = async ({
 	author,
 	description,
 	genre,
-	image_url,
+	image,
 	price,
 	editorialId,
 }) => {
@@ -79,7 +79,7 @@ const createIndividualBook = async ({
 		author: author,
 		description: description,
 		genre: genre,
-		image_url: image_url,
+		image: image,
 		price: price,
 		editorialId: editorialId,
 	});
@@ -137,7 +137,7 @@ const deleteBook = async (req, res, next) => {
 // Función para actualizar un libro por su ID
 const updateBook = async (req, res, next) => {
 	const { id } = req.params;
-	const { name, author, description, genre, image_url, price, editorialId } = req.body;
+	const { name, author, description, genre, image, price, editorialId } = req.body;
 
 	try {
 		const book = await Book.findByPk(id);
@@ -153,7 +153,7 @@ const updateBook = async (req, res, next) => {
 			author: author,
 			description: description,
 			genre: genre,
-			image_url: image_url,
+			image: image,
 			price: price,
 			editorialId: editorialId,
 		});
