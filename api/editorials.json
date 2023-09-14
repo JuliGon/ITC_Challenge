@@ -1,98 +1,98 @@
 [
   {
     "name": "Editorial Planeta",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/d8253153-6647-454f-884e-b923429307f3-planeta.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/d8253153-6647-454f-884e-b923429307f3-planeta.svg"
   },
   {
     "name": "Booket",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/15b65a22-758b-43b6-97ef-8caaf23e0353-1200x1200_Logo-booket.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/15b65a22-758b-43b6-97ef-8caaf23e0353-1200x1200_Logo-booket.svg"
   },
   {
     "name": "Espasa",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/f0f5fbf7-206e-4577-b9c2-c86bedec3615-Espasa.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/f0f5fbf7-206e-4577-b9c2-c86bedec3615-Espasa.svg"
   },
   {
     "name": "Tusquets Editores",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/09d4dec6-4d88-4655-a6c7-3e1782ef95b5-Tusquets.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/09d4dec6-4d88-4655-a6c7-3e1782ef95b5-Tusquets.svg"
   },
   {
     "name": "Editorial Destino",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/736eb35c-a6d9-48e5-8080-c617b1c545ea-Destino.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/736eb35c-a6d9-48e5-8080-c617b1c545ea-Destino.svg"
   },
   {
     "name": "Ediciones Martínez Roca",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/87652274-2055-4651-a3a8-12cdc61d175c-b5297244-f47f-4374-b34f-a4348100b890-mr%201.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/87652274-2055-4651-a3a8-12cdc61d175c-b5297244-f47f-4374-b34f-a4348100b890-mr%201.svg"
   },
   {
     "name": "Editorial CrossBooks",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/904cd98a-9bf3-4d68-93dc-d7bc726c9706-crossbooks-logo.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/904cd98a-9bf3-4d68-93dc-d7bc726c9706-crossbooks-logo.svg"
   },
   {
     "name": "Seix Barral",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/d01f462b-2133-423c-856a-c6ae0b4dbb40-Seix-Barral.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/d01f462b-2133-423c-856a-c6ae0b4dbb40-Seix-Barral.svg"
   },
 	{
     "name": "Paidós",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/38ab3317-5c4c-477b-87cb-0022c772c995-Paidos_logo.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/38ab3317-5c4c-477b-87cb-0022c772c995-Paidos_logo.svg"
   },
 	{
     "name": "Minotauro",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/c63bc205-b0ae-4ba2-9f0b-f4a2e92776c7-Minotauro.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/c63bc205-b0ae-4ba2-9f0b-f4a2e92776c7-Minotauro.svg"
   },
 	{
     "name": "Austral Editorial",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/163f8bd4-48ab-4fc6-b2a2-bd58000c0978-Austral.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/163f8bd4-48ab-4fc6-b2a2-bd58000c0978-Austral.svg"
   },
 	{
     "name": "Ariel",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/5596e036-28a2-4b2e-9b89-f623796574c8-Ariel.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/5596e036-28a2-4b2e-9b89-f623796574c8-Ariel.svg"
   },
 	{
     "name": "Penguin Random House",
-    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Penguin_Random_House_201x_logo.svg"
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Penguin_Random_House_201x_logo.svg"
   },
 	{
     "name": "Alfaguara",
-    "logo_url": "https://seeklogo.com/images/E/editorial-alfaguara-logo-C062CC4DB6-seeklogo.com.png"
+    "logo": "https://seeklogo.com/images/E/editorial-alfaguara-logo-C062CC4DB6-seeklogo.com.png"
   },
 	{
     "name": "Anagrama",
-    "logo_url": "https://www.vectorlogo.es/wp-content/uploads/2019/04/logo-vector-editorial-anagrama.jpg"
+    "logo": "https://www.vectorlogo.es/wp-content/uploads/2019/04/logo-vector-editorial-anagrama.jpg"
   },
 	{
 		"name": "Plaza & Janés",
-		"logo_url": "https://www.penguinrandomhousegrupoeditorial.com/wp-content/uploads/2020/12/sellos_PLAZA-Y-JANES-parrilla.png"
+		"logo": "https://www.penguinrandomhousegrupoeditorial.com/wp-content/uploads/2020/12/sellos_PLAZA-Y-JANES-parrilla.png"
 	},
 	{
 		"name": "Salamandra",
-		"logo_url": "https://static.wixstatic.com/media/77a733_91e3df7bfbf645eebb194b0a19fe8fff.jpg/v1/fill/w_1208,h_424,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/77a733_91e3df7bfbf645eebb194b0a19fe8fff.jpg"
+		"logo": "https://static.wixstatic.com/media/77a733_91e3df7bfbf645eebb194b0a19fe8fff.jpg/v1/fill/w_1208,h_424,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/77a733_91e3df7bfbf645eebb194b0a19fe8fff.jpg"
 	},
   {
     "name": "Libros Cúpula",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/11543da4-72b9-4ab8-9269-97757ef200e7-Cupula.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/11543da4-72b9-4ab8-9269-97757ef200e7-Cupula.svg"
   },
   {
     "name": "Luciérnaga",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/56e4e22c-6a1a-4670-9449-b33c020d23ff-Luciernaga.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/56e4e22c-6a1a-4670-9449-b33c020d23ff-Luciernaga.svg"
   },
   {
     "name": "Emecé Editores",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/96748db4-1c6b-4a98-9b3f-3036c5b375ae-emece-editores_logo.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/96748db4-1c6b-4a98-9b3f-3036c5b375ae-emece-editores_logo.svg"
   },
   {
     "name": "El Aleph Editores",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/ecee009b-efce-42e5-a640-75f4da4b6f08-aleph-logo.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/ecee009b-efce-42e5-a640-75f4da4b6f08-aleph-logo.svg"
   },
   {
     "name": "Para Dummies",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/fe662d87-7e4d-4b69-b4a9-e204858d3a3c-logo_para-dummies.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/fe662d87-7e4d-4b69-b4a9-e204858d3a3c-logo_para-dummies.svg"
   },
   {
     "name": "Crítica",
-    "logo_url": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/eaf82b6f-e825-4581-a6a9-904dea2e6464-critica.svg"
+    "logo": "https://proassetspdlcom.cdnstatics2.com/usuaris/editorial/logo/eaf82b6f-e825-4581-a6a9-904dea2e6464-critica.svg"
   },
   {
     "name": "Debolsillo",
-    "logo_url": "https://www.penguinrandomhousegrupoeditorial.com/wp-content/uploads/2020/12/sellos_DE-BOLSILLO-parrilla.png"
+    "logo": "https://www.penguinrandomhousegrupoeditorial.com/wp-content/uploads/2020/12/sellos_DE-BOLSILLO-parrilla.png"
   }
 ]

@@ -3,37 +3,38 @@ const { Op } = require("sequelize");
 
 // Función para obtener todos los libros y aplicar filtros de nombre y descripción
 const getAllBooks = async (req, res, next) => {
-	const { name, description } = req.query;
-	let whereClause = {};
+  const { name, description } = req.query;
+  let whereClause = {};
 
-	if (name) {
-		whereClause.name = {
-			[Op.iLike]: `%${name}%`,
-		};
-	}
+  if (name) {
+    whereClause.name = {
+      [Op.iLike]: `%${name}%`,
+    };
+  }
 
-	if (description) {
-		whereClause.description = {
-			[Op.iLike]: `%${description}%`,
-		};
-	}
+  if (description) {
+    whereClause.description = {
+      [Op.iLike]: `%${description}%`,
+    };
+  }
 
-	try {
-		const books = await Book.findAll({
-			where: whereClause,
-		});
+  try {
+    const books = await Book.findAll({
+      where: whereClause,
+    });
 
-		if (books.length === 0) {
-			const error = new Error("Books not found");
-			error.status = 404;
-			throw error;
-		}
+    if (books.length === 0) {
+      const error = new Error("Books not found");
+      error.status = 404;
+      throw error;
+    }
 
-		res.json(books);
-	} catch (error) {
-		next(error);
-	}
+    res.json(books);
+  } catch (error) {
+    next(error);
+  }
 };
+
 
 // Función para buscar un libro por su ID
 const getBookById = async (req, res, next) => {
