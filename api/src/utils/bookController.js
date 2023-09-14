@@ -45,10 +45,6 @@ const getAllBooks = async (req, res, next) => {
 	}
 };
 
-module.exports = {
-	getAllBooks,
-};
-
 // Función para buscar un libro por su ID
 const getBookById = async (req, res, next) => {
 	const { id } = req.params;
