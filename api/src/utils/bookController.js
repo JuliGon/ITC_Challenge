@@ -3,38 +3,51 @@ const { Op } = require("sequelize");
 
 // Función para obtener todos los libros y aplicar filtros de nombre y descripción
 const getAllBooks = async (req, res, next) => {
-  const { name, description } = req.query;
-  let whereClause = {};
+	const { name, description } = req.query;
+	let whereClause = {};
 
-  if (name) {
-    whereClause.name = {
-      [Op.iLike]: `%${name}%`,
-    };
-  }
+	if (name || description) {
+		whereClause[Op.or] = [];
 
-  if (description) {
-    whereClause.description = {
-      [Op.iLike]: `%${description}%`,
-    };
-  }
+		if (name) {
+			whereClause[Op.or].push({
+				name: {
+					[Op.iLike]: `%${name}%`,
+				},
+			});
+		}
 
-  try {
-    const books = await Book.findAll({
-      where: whereClause,
-    });
+		if (description) {
+			whereClause[Op.or].push({
+				description: {
+					[Op.iLike]: `%${description}%`,
+				},
+			});
+		}
+	}
 
-    if (books.length === 0) {
-      const error = new Error("Books not found");
-      error.status = 404;
-      throw error;
-    }
+	try {
+		const books = await Book.findAll({
+			where: whereClause,
+		});
 
-    res.json(books);
-  } catch (error) {
-    next(error);
-  }
+		if (books.length === 0) {
+			const error = new Error(
+				`Books not found for name: ${name}, description: ${description}`
+			);
+			error.status = 404;
+			throw error;
+		}
+
+		res.json(books);
+	} catch (error) {
+		next(error);
+	}
 };
 
+module.exports = {
+	getAllBooks,
+};
 
 // Función para buscar un libro por su ID
 const getBookById = async (req, res, next) => {
@@ -96,25 +109,25 @@ const bulkCreateBooks = async (booksData) => {
 
 // Función para crear un nuevo libro o libros
 const createBook = async (req, res, next) => {
- 	try {
- 		const requestData = req.body;
- 		if (Array.isArray(requestData)) {
- 			const books = await bulkCreateBooks(requestData);
-  			res.json(books);
- 		} else if (typeof requestData === "object") {
- 			const newBook = await createIndividualBook(requestData);
- 			res.status(201).json(newBook);
- 		} else {
- 			const error = new Error(
- 				"Invalid data format. Request data must be an object or an array."
- 			);
- 			error.status = 400;
- 			throw error;
- 		}
- 	} catch (error) {
- 		console.error(error);
- 		next(error);
- 	}
+	try {
+		const requestData = req.body;
+		if (Array.isArray(requestData)) {
+			const books = await bulkCreateBooks(requestData);
+			res.json(books);
+		} else if (typeof requestData === "object") {
+			const newBook = await createIndividualBook(requestData);
+			res.status(201).json(newBook);
+		} else {
+			const error = new Error(
+				"Invalid data format. Request data must be an object or an array."
+			);
+			error.status = 400;
+			throw error;
+		}
+	} catch (error) {
+		console.error(error);
+		next(error);
+	}
 };
 
 // Función para eliminar un libro por su ID
@@ -138,7 +151,8 @@ const deleteBook = async (req, res, next) => {
 // Función para actualizar un libro por su ID
 const updateBook = async (req, res, next) => {
 	const { id } = req.params;
-	const { name, author, description, genre, image, price, editorialId } = req.body;
+	const { name, author, description, genre, image, price, editorialId } =
+		req.body;
 
 	try {
 		const book = await Book.findByPk(id);
