@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Navbar.css";
-import BookModel from "../../utils/bookModel";
+import { getBooks } from "../../utils/bookControllers";
 
 export default function Navbar({ onSearch }) {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -11,9 +11,8 @@ export default function Navbar({ onSearch }) {
 
 	const handleSearch = async (e) => {
 		e.preventDefault();
-		const bookModel = new BookModel();
 		try {
-			const books = await bookModel.getBooks(null, searchQuery, searchQuery);
+			const books = await getBooks(null, searchQuery, searchQuery);
 			onSearch(books);
 			console.log("Libros filtrados:", books);
 		} catch (error) {
