@@ -1,9 +1,9 @@
 # IT Crowd Challenge - Documentation
 
-Description
+# Description
 This project is part of the ITC Challenge and is a web application aimed at the commercialization of products, in this case, books.
 
-Project Structure
+# Project Structure
 The project is structured as follows:
 
 frontend: Contains the client code developed in React + Vite.
@@ -12,12 +12,12 @@ database: Contains files related to the "books" database.
 Libraries Used
 The main libraries and technologies used in this project are:
 
-Features
+# Features
 Home: Displays the available books in the database.
 Detail: Shows the details of a specific book.
 Admin: Dashboard to view, create, edit, and delete books from the database. Additionally, you can view loaded publishers, create them, and delete them.
 
-REST API
+# REST API
 The application uses a REST API to manage books and publishers. Below are the available endpoints:
 
 GET /api/books: Retrieves a list of all books, with the option to filter by name or description.
@@ -38,7 +38,7 @@ POST /api/editorials: Creates a new publisher.
 
 DELETE /api/editorials/{id}: Deletes an existing publisher.
 
-Instructions for Running the Project Locally
+# Instructions for Running the Project Locally
 Follow these steps to run the application locally:
 
 Frontend
