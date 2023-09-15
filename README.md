@@ -17,7 +17,7 @@ Home: Displays the available books in the database.
 Detail: Shows the details of a specific book.
 Admin: Dashboard to view, create, edit, and delete books from the database. Additionally, you can view loaded publishers, create them, and delete them.
 
-#" REST API
+# REST API
 The application uses a REST API to manage books and publishers. Below are the available endpoints:
 
 GET /api/books: Retrieves a list of all books, with the option to filter by name or description.
@@ -37,6 +37,10 @@ GET /api/editorials/{id}: Retrieves the details of a specific publisher.
 POST /api/editorials: Creates a new publisher.
 
 DELETE /api/editorials/{id}: Deletes an existing publisher.
+
+## API REST Documentation
+### Swagger: 
+https://itc-challenge-production.up.railway.app/api-doc/#/
 
 ## Instructions for Running the Project Locally
 Follow these steps to run the application locally:
