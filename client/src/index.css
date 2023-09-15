@@ -25,6 +25,7 @@ body {
   color: var(--text-color) !important;
   font-family: var(--title-font);
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
