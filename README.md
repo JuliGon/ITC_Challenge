@@ -38,6 +38,10 @@ POST /api/editorials: Creates a new publisher.
 
 DELETE /api/editorials/{id}: Deletes an existing publisher.
 
+## API REST Documentation
+### Swagger: 
+https://itc-challenge-production.up.railway.app/api-doc/#/
+
 ## Instructions for Running the Project Locally
 Follow these steps to run the application locally:
 
