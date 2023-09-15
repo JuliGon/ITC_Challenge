@@ -112,4 +112,27 @@ router.get("/", editorialController.getAllEditorials);
 // Ruta para crear una nueva editorial o editoriales
 router.post("/", editorialController.createEditorial);
 
+/**
+ * @swagger
+ * /api/editorials/{id}:
+ *   delete:
+ *     summary: Delete an editorial by ID
+ *     tags: [Editorial]
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         description: Editorial identifier
+ *         required: true
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       '200':
+ *         description: Editorial deleted successfully
+ *       '404':
+ *         description: Editorial not found
+ */
+
+// Ruta para eliminar una editorial por su ID
+router.delete("/:id", editorialController.deleteEditorial);
+
 module.exports = router;

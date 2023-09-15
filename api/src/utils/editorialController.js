@@ -85,8 +85,27 @@ const createEditorial = async (req, res, next) => {
 	}
 };
 
+// Función para eliminar una editorial por su ID
+const deleteEditorial = async (req, res, next) => {
+	const { id } = req.params;
+	try {
+		const deletedEditorial = await Editorial.destroy({
+			where: { id: id },
+		});
+		if (deletedEditorial === 0) {
+			const error = new Error("Editorial not found");
+			error.status = 404;
+			throw error;
+		}
+		res.json({ message: "Editorial successfully deleted" });
+	} catch (error) {
+		next(error);
+	}
+};
+
 module.exports = {
 	getAllEditorials,
 	getEditorialById,
 	createEditorial,
+	deleteEditorial
 };
