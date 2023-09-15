@@ -58,12 +58,12 @@
 	.card {
 		padding: 15px;
 		width: 16rem;
-		min-height: 27rem;
+		min-height: 29rem;
 	}
 
 	.img-fluid {
-		min-height: 20rem;
-		min-width: 13.5rem;
+		min-height: 22rem;
+		min-width: 14rem;
 	}
 	
 	.card-title {
