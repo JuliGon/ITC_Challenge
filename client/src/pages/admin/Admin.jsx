@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Admin.css";
 import BooksList from "./BooksList";
 import EditorialsList from "./EditorialsList";
