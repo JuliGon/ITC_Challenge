@@ -10,11 +10,11 @@ export default function Card({ id, name, author, image, price }) {
 							src={image}
 							className="img-fluid rounded-start"
 							alt="book cover"
-							style={{
-								maxWidth: "8rem",
-								maxHeight: "12rem",
-								height: "100%",
-							}}
+							// style={{
+							// 	maxWidth: "8rem",
+							// 	maxHeight: "12rem",
+							// 	height: "100%",
+							// }}
 						/>
 					</div>
 					<div className="col-md-8" style={{padding: "0"}}>
