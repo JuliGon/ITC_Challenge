@@ -53,7 +53,7 @@ export default function Home({ books: initialBooks }) {
 							key={index}
 							style={{ textDecoration: "none" }}
 						>
-							<div className="cards">
+							<div className="cards" style={{margin: "5px"}}>
 								<Card
 									key={e.id}
 									image={e.image}
