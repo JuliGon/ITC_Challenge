@@ -58,7 +58,7 @@
 	.card {
 		padding: 15px;
 		width: 18rem;
-		min-height: 28rem;
+		min-height: 27.5rem;
 	}
 
 	.img-fluid {
@@ -71,11 +71,11 @@
 	}
 	
 	.card-text {
-		margin-top: -20px;
+		display: none;
 	}
 
 	.card-price {
-		margin-top: -5px;
+		margin-top: -20px;
 		font-size: 16px;
 	}
 
