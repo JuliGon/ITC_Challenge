@@ -1,0 +1,75 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+.sub-container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.img {
+	width: auto;
+	height: 425px;
+	margin-right: 50px;
+}
+
+.text-container {
+	text-align: left;
+}
+
+.name {
+	font-size: 24px;
+}
+
+.p {
+	font-size: var(--text-size);
+	font-family: var(--text-font);
+}
+
+.price {
+	font-family: var(--text-font);
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.editorial-logo {
+	width: 120px;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 990px) {
+	.p {
+		font-size: 10px;
+	}
+	
+}
+
+@media screen and (max-width: 760px) {
+	.sub-container {
+		flex-direction: column;
+	}
+
+	.name {
+		margin-top: 20px;
+	}
+
+	.img {
+		height: 350px;
+	}
+
+	@media screen and (max-width: 576px){
+		.name {
+			font-size: 16px;
+			margin-top: 20px;
+		}
+
+		.price {
+			font-size: 24px;
+		}
+	}
+}
+	

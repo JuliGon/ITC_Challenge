@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { getBooks } from "../../utils/bookControllers";
 import Card from "../../components/card/Card";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 export default function Home({ books: initialBooks }) {
@@ -45,17 +46,25 @@ export default function Home({ books: initialBooks }) {
 	return (
 		<div className="container">
 			<div className="row row-cols-1 row-cols-md-2 g-4">
-				{books?.map((e, index) => (
-					<div key={index} className="cards">
-						<Card
-							key={e.id}
-							image={e.image}
-							name={e.name}
-							author={e.author}
-							price={e.price}
-						/>
-					</div>
-				))}
+				{books?.map((e, index) => {
+					return (
+						<Link
+							to={`/books/${e.id}`}
+							key={index}
+							style={{ textDecoration: "none" }}
+						>
+							<div className="cards">
+								<Card
+									key={e.id}
+									image={e.image}
+									name={e.name}
+									author={e.author}
+									price={e.price}
+								/>
+							</div>
+						</Link>
+					);
+				})}
 			</div>
 		</div>
 	);
