@@ -11,14 +11,13 @@ export default function Card({ id, name, author, image, price }) {
 							className="img-fluid rounded-start"
 							alt="book cover"
 							style={{
-								maxWidth: "7.5rem",
+								maxWidth: "8rem",
 								maxHeight: "12rem",
 								height: "100%",
-								marginRight: "5px"
 							}}
 						/>
 					</div>
-					<div className="col-md-8">
+					<div className="col-md-8" style={{padding: "0"}}>
 						<div className="card-body" >
 							<h5 className="card-title">{name}</h5>
 							<p className="card-text text-secondary">{author}</p>

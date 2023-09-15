@@ -8,11 +8,6 @@
 	max-height: 12rem;
 }
 
-.img {
-	flex: 0 0 auto;
-	object-fit: cover;
-}
-
 .card-title {
 	font-family: var(--title-font);
 	font-size: 16px;
@@ -34,18 +29,13 @@
 	font-size: 24px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
 	.card {
-		padding: 20px;
-		width: 12rem;
-		min-width: 10rem;
-		min-height: 18.5rem;
+		min-width: 18rem;
 	}
 
 	.card-title {
 		font-size: 12px;
-		margin-top: 0;
-		height: 0.8rem;
 	}
 
 	.card-text {
@@ -54,6 +44,28 @@
 	}
 
 	.card-price {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.card {
+		padding: 15px 5px;
+		width: 12rem;
+		min-width: 9rem;
+		min-height: 19rem;
+	}
+
+	.card-title {
+		margin-top: 0;
+	}
+	
+	.card-text {
+		margin-top: -20px;
+	}
+
+	.card-price {
+		margin-top: 0px;
 		font-size: 12px;
 	}
 

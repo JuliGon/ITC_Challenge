@@ -11,4 +11,7 @@
 	justify-content: space-around;
 	flex-wrap: wrap;
 	gap: 1rem;
+	min-width: 18rem;
 }
+
+
