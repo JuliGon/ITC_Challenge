@@ -45,7 +45,7 @@ export default function Home({ books: initialBooks }) {
 
 	return (
 		<div className="container">
-			<div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+			<div className="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-4">
 				{books?.map((e, index) => {
 					return (
 						<Link
