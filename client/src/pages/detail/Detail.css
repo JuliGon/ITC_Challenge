@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 769px) {
 	.sub-container {
-		flex-direction: column;
+		flex-direction: column !important;
 	}
 
 	.img {
