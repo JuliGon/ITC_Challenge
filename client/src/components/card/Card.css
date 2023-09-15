@@ -56,16 +56,14 @@
 
 @media screen and (max-width: 767px) {
 	.card {
-		padding: 15px 5px;
-		width: 14rem;
-		min-width: 10rem;
-		min-height: 22rem;
+		padding: 15px;
+		width: 16rem;
+		min-height: 27rem;
 	}
 
 	.img-fluid {
-		max-width: 10rem !important;
-		max-height: 16rem;
-		height: 100%;
+		min-height: 20rem;
+		min-width: 13.5rem;
 	}
 	
 	.card-title {
@@ -78,7 +76,7 @@
 
 	.card-price {
 		margin-top: 0px;
-		font-size: 12px;
+		font-size: 16px;
 	}
 
 }
