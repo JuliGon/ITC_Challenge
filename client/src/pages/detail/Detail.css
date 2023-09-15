@@ -1,81 +1,87 @@
 .container {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+	margin-top: 35px;
 }
 
 .sub-container {
-	display: flex;
-	flex-direction: row;
-	margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
 }
 
 .img {
-	width: auto;
-	height: 450px;
-	margin-right: 50px;
+  width: auto;
+  height: 450px !important;
+  margin-right: 50px;
 }
 
 .text-container {
-	text-align: left;
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+.text-container p:last-child {
+  max-height: 200px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  margin-bottom: 10px; 
 }
 
 .name {
 	font-size: 24px;
-	height: 2rem;
 }
 
 .p {
 	font-size: var(--text-size);
 	font-family: var(--text-font);
-	height: 22rem;
-	overflow: hidden;
-	/* white-space: nowrap; */
-	text-overflow: ellipsis;
 }
 
 .price {
 	font-family: var(--text-font);
 	font-size: 36px;
 	font-weight: 600;
-	height: 2rem;
 }
 
 .editorial-logo {
 	width: 120px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 769px) {
 	.sub-container {
 		flex-direction: column;
 	}
 
+	.img {
+		width: auto;
+		height: 500px;
+		margin-right: 0;
+		align-self: center;
+	}
+
+	.text-container p:last-child {
+    max-height: none;
+    overflow: visible;
+    text-overflow: clip;
+  }
+
 	.name {
 		margin-top: 20px;
 	}
+}
 
 	@media screen and (max-width: 576px) {
-		.img {
-			width: auto;
-			height: 500px;
-			margin-right: 0x;
-		}
-
 		.name {
 			font-size: 16px;
 			margin-top: 20px;
-		}
-
-		.p {
-			font-size: var(--text-size);
-			font-family: var(--text-font);
-			overflow: visible;
 		}
 
 		.price {
 			font-size: 24px;
 		}
 	}
-}
+

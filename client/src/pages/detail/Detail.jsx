@@ -53,7 +53,7 @@ export default function Detail() {
 
 	return (
 		<div className="container">
-			<Link to="/" style={{ display: "flex", alignContent: "left" }}>
+			<Link to="/" style={{ display: "flex", alignContent: "left", marginTop: "0" }}>
 				<button
 					type="button"
 					className="btn btn-outline-secondary"
