@@ -18,9 +18,10 @@ function App() {
       <div>
         <Navbar onSearch={handleSearchResults} />
         <Routes>
-          <Route path="/books/:id" element={<Detail />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route exact path="/books/:id" element={<Detail />} />
+          <Route exact path="/admin" element={<Admin />} />
           <Route
+            exact
             path="/"
             element={<Home books={books} />}
           />
