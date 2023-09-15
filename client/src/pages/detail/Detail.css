@@ -3,12 +3,12 @@
   justify-content: center;
   align-content: center;
   flex-direction: column;
-	margin-top: 35px;
+	margin-top: 2.1875rem;
 }
 
 .sub-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   margin-top: 20px;
 }
 

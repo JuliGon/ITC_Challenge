@@ -1,6 +1,5 @@
 /* eslint-disable no-useless-catch */
 const BOOKS_URL = import.meta.env.VITE_BOOKS_URL;
-const EDITORIALS_URL = import.meta.env.VITE_EDITORIALS_URL;
 
 export async function getBooks(signal, name, description) {
 	const url = new URL(BOOKS_URL);
@@ -29,20 +28,6 @@ export async function getBooks(signal, name, description) {
 export async function getBook(id) {
 	try {
 		const response = await fetch(`${BOOKS_URL}/${id}`);
-
-		if (!response.ok) {
-			throw new Error("Network response was not ok");
-		}
-
-		return response.json();
-	} catch (error) {
-		throw error;
-	}
-}
-
-export async function getEditorials() {
-	try {
-		const response = await fetch(EDITORIALS_URL);
 
 		if (!response.ok) {
 			throw new Error("Network response was not ok");

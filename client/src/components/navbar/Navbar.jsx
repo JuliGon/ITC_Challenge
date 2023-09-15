@@ -49,8 +49,8 @@ export default function Navbar({ onSearch }) {
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="/form">
-									Form
+								<a className="nav-link" href="/admin">
+									Admin
 								</a>
 							</li>
 						</ul>
