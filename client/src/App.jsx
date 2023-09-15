@@ -19,7 +19,7 @@ function App() {
         <Navbar onSearch={handleSearchResults} />
         <Routes>
           <Route exact path="/books/:id" element={<Detail />} />
-          <Route exact path="/admin" element={<Admin />} />
+          <Route path="/admin" element={<Admin />} />
           <Route
             exact
             path="/"
