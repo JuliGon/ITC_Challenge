@@ -50,5 +50,5 @@ Open a terminal and navigate to the backend directory.
 Run npm install to install server dependencies.
 Configure the necessary environment variables (e.g., database connection string).
 Run npm start to start the backend server.
-The application will be available at http://localhost:5173 for the client and http://localhost:3001 for the backend server.
+The application will be available at https://localhost:5173 for the client and https://localhost:3001 for the backend server.
 
