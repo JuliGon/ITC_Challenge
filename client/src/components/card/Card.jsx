@@ -3,7 +3,7 @@ import "./Card.css";
 export default function Card({ id, name, author, image, price }) {
 	return (
 		<>
-			<div className="card text-bg-dark border-secondary mb-3" key={id}>
+			<div className="card text-bg-dark border-dark mb-3" key={id}>
 				<div className="row g-0">
 					<div className="col-md-4">
 						<img
