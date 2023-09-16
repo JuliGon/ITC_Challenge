@@ -8,7 +8,7 @@ export default function Card({ id, name, author, image, price }) {
 					<div className="col-md-4">
 						<img
 							src={image}
-							className="img-fluid rounded-start"
+							className="img-fluid"
 							alt="book cover"
 							// style={{
 							// 	maxWidth: "8rem",
