@@ -14,10 +14,9 @@
 }
 
 .card-title {
-	font-family: var(--title-font);
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
-	height: 1rem;
+	height: 1.5rem;
 	margin: 10px !important;
 	overflow: hidden;
 	white-space: nowrap;
@@ -25,12 +24,10 @@
 }
 
 .card-text {
-	font-family: var(--text-font);
 	font-size: var(--text-size);
 }
 
 .card-price {
-	font-family: var(--text-font);
 	font-size: 32px;
 }
 
@@ -40,11 +37,10 @@
 	}
 
 	.card-title {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.card-text {
-		font-size: 10px;
 		margin-bottom: 5px;
 	}
 
@@ -67,6 +63,7 @@
 	}
 	
 	.card-title {
+		font-size: 12px;
 		margin: 0px !important;
 	}
 	

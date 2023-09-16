@@ -57,7 +57,7 @@ export default function EditBookForm({ book, updateBook, onCancel }) {
           <label htmlFor="description" className="form-label text-light">
             Descripción
           </label>
-          <input
+          <textarea
             type="text"
             className="form-control bg-dark text-light"
             id="description"

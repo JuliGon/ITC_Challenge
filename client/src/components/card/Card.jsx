@@ -3,7 +3,7 @@ import "./Card.css";
 export default function Card({ id, name, author, image, price }) {
 	return (
 		<>
-			<div className="card text-bg-dark border-dark mb-3" key={id}>
+			<div className="card text-bg-dark border-secondary mb-3" key={id}>
 				<div className="row g-0">
 					<div className="col-md-4">
 						<img
@@ -18,9 +18,9 @@ export default function Card({ id, name, author, image, price }) {
 						/>
 					</div>
 					<div className="col-md-8" style={{padding: "0"}}>
-						<div className="card-body" >
+						<div className="card-body">
 							<h5 className="card-title">{name}</h5>
-							<p className="card-text text-secondary">{author}</p>
+							<p className="card-text">{author}</p>
 							<p className="card-price">
 								<big>
 									<strong>$ {price}</strong>

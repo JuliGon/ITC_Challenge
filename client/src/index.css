@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-  --background-color: #1C1F22;
-  --tag-color: #a6a2a2;
-  --text-color: #ffffff;
+  --background-color: #212529;
+  --text-color: #ede6f2;
   --side-dark: #25292D;
-  --title-font: Helvetica, sans-serif;
-  --text-font: 'Roboto Mono', monospace;
-  --title-size: 60px;
+  --text-font: 'Montserrat', sans-serif;
   --text-size: 12px;
 }
 
@@ -20,7 +17,7 @@
 body {
   background-color: var(--background-color) !important;
   color: var(--text-color) !important;
-  font-family: var(--title-font);
+  font-family: var(--text-font) !important;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
