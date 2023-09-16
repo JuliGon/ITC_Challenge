@@ -25,7 +25,7 @@
 }
 
 .text-container p:last-child {
-  max-height: 200px; 
+  max-height: 184px; 
   overflow: hidden;
   text-overflow: ellipsis; 
   margin-bottom: 10px; 
