@@ -9,9 +9,8 @@
 
 .img-fluid {
 	max-width: 7rem !important;
-	max-height: 12rem;
+	max-height: 10.5rem;
 	height: 100%;
-	margin-right: 5px !important;
 }
 
 .card-title {
@@ -19,7 +18,7 @@
 	font-size: 14px;
 	font-weight: 600;
 	height: 1rem;
-	margin: 10px 15px !important;
+	margin: 10px !important;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
