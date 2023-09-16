@@ -53,7 +53,7 @@ export default function Detail() {
 	}
 
 	return (
-		<div className="container">
+		<div className="container-fluid">
 			<Link to="/" style={{ display: "flex", alignContent: "left", marginTop: "0" }}>
 				<button
 					type="button"

@@ -44,8 +44,8 @@ export default function Home({ books: initialBooks }) {
 	}, [initialBooks]);
 
 	return (
-		<div className="container">
-			<div className="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-4">
+		<div className="container-fluid">
+			<div className="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
 				{books?.map((e, index) => {
 					return (
 						<Link
@@ -53,7 +53,7 @@ export default function Home({ books: initialBooks }) {
 							key={index}
 							style={{ textDecoration: "none" }}
 						>
-							<div className="cards" style={{margin: "5px"}}>
+							<div className="cards">
 								<Card
 									key={e.id}
 									image={e.image}
