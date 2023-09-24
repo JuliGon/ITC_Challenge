@@ -57,7 +57,7 @@
   },
 	{
     "name": "Anagrama",
-    "logo": "https://www.vectorlogo.es/wp-content/uploads/2019/04/logo-vector-editorial-anagrama.jpg"
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Logo_anagrama.png"
   },
 	{
 		"name": "Plaza & Janés",
@@ -65,7 +65,7 @@
 	},
 	{
 		"name": "Salamandra",
-		"logo": "https://www.penguinrandomhousegrupoeditorial.com/wp-content/uploads/2020/12/salamandra-infantil-juvenil-parrilla.png"
+		"logo": "https://www.penguinrandomhousegrupoeditorial.com/wp-content/uploads/2020/12/sellos_SALAMANDRA-parrilla.png"
 	},
   {
     "name": "Libros Cúpula",
@@ -94,5 +94,9 @@
   {
     "name": "Debolsillo",
     "logo": "https://www.penguinrandomhousegrupoeditorial.com/wp-content/uploads/2020/12/sellos_DE-BOLSILLO-parrilla.png"
+  },
+  {
+    "name": "Penguin Clásicos",
+    "logo": "https://www.penguinrandomhousegrupoeditorial.com/wp-content/uploads/2020/12/sellos_PENGUIN-CLASICOS-parrilla.png"
   }
 ]
