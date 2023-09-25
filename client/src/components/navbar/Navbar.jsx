@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Navbar.css";
-import { getBooks } from "../../utils/bookControllers";
+import { getBooks } from "../../services/bookControllers";
 
 export default function Navbar({ onSearch }) {
 	const [searchQuery, setSearchQuery] = useState("");

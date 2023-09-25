@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const errorHandler = require("../utils/errorHandler");
+const errorHandler = require("../controllers/errorHandler");
 
 // Imports
 const booksRouter = require("./books");

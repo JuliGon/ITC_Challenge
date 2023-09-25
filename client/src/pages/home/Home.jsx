@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
-import { getBooks } from "../../utils/bookControllers";
+import { getBooks } from "../../services/bookControllers";
 import Card from "../../components/card/Card";
 import { Link } from "react-router-dom";
 import "./Home.css";

@@ -11,12 +11,12 @@ import {
 	createBook,
 	updateBook,
 	deleteBook,
-} from "../../utils/bookControllers";
+} from "../../services/bookControllers";
 import {
 	getEditorials,
 	createEditorial,
 	deleteEditorial,
-} from "../../utils/editorialControllers";
+} from "../../services/editorialControllers";
 
 export default function Admin() {
 	const [activeTab, setActiveTab] = useState("books");

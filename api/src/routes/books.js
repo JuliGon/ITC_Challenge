@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const bookController = require("../utils/bookController"); 
+const bookController = require("../controllers/bookController"); 
 
 
 /**

@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { Editorial } = require("../db");
-const editorialController = require("../utils/editorialController")
+const editorialController = require("../controllers/editorialController")
 
 /**
  * @swagger

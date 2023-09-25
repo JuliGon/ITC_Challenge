@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { getBook } from "../../utils/bookControllers";
-import { getEditorials } from "../../utils/editorialControllers";
+import { getBook } from "../../services/bookControllers";
+import { getEditorials } from "../../services/editorialControllers";
 import { BsArrowLeft } from "react-icons/bs";
 import "./Detail.css";
 
