@@ -11,9 +11,9 @@ The project is structured as follows:
 #### database: Contains files related to the "books" database.
 
 ## Features
-Home: Displays the available books in the database.
-Detail: Shows the details of a specific book.
-Admin: Dashboard to view, create, edit, and delete books from the database. Additionally, you can view loaded publishers, create them, and delete them.
+- Home: Displays the available books in the database.
+- Detail: Shows the details of a specific book.
+- Admin: Dashboard to view, create, edit, and delete books from the database. Additionally, you can view loaded publishers, create them, and delete them.
 
 # REST API
 The application uses a REST API to manage books and publishers. Below are the available endpoints:
