@@ -23,7 +23,7 @@ export default function Navbar({ onSearch }) {
 	return (
 		<div className="container">
 			<nav
-				className="navbar fixed-top navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body"
+				className="navbar fixed-top navbar-expand-lg bg-body-tertiary border-bottom border-body"
 				data-bs-theme="dark"
 			>
 				<div className="container-fluid">

@@ -44,17 +44,12 @@ export default function Detail() {
 		fetchBookDetails();
 	}, [id]);
 
-	if (loading) {
-		return <p>Cargando...</p>;
-	}
-
-	if (error) {
-		return <p>Error al cargar los detalles del libro: {error.message}</p>;
-	}
-
 	return (
 		<div className="container-fluid">
-			<Link to="/" style={{ display: "flex", alignContent: "left", marginTop: "0" }}>
+			<Link
+				to="/"
+				style={{ display: "flex", alignContent: "left", marginTop: "0" }}
+			>
 				<button
 					type="button"
 					className="btn btn-outline-secondary"
@@ -63,29 +58,31 @@ export default function Detail() {
 					<BsArrowLeft />
 				</button>
 			</Link>
-			<div className="sub-container">
-				<div className="img-container">
-					<img src={book.image} className="img" />
+			{loading ? (
+				<div className="spinner-border text-dark" role="status">
+					<span className="visually-hidden">Loading...</span>
 				</div>
-				<div className="text-container">
-					<h3 className="name">{book.name}</h3>
-					<div className="p">
-						<p>{book.author}</p>
-						<p>{book.genre}</p>
-						{bookEditorial && (
-							<img
-								src={bookEditorial.logo} 
-								alt={bookEditorial.name}
-								className="editorial-logo"
-							/>
-						)}
-						<p>{book.description}</p>
+			) : error ? (
+				<p>Error al cargar los detalles del libro: {error.message}</p>
+			) : (
+				<div className="sub-container">
+					<div className="img-container">
+						<img src={book.image} className="img" />
 					</div>
-					<div className="price">
-						<p>$ {book.price}</p>
+					<div className="text-container">
+						<h3 className="name">{book.name}</h3>
+						<div className="p">
+							<p>{book.author}</p>
+							<p>{book.genre}</p>
+							{bookEditorial && <p className="p">{bookEditorial.name}</p>}
+							<p>{book.description}</p>
+						</div>
+						<div className="price">
+							<p>$ {book.price}</p>
+						</div>
 					</div>
 				</div>
-			</div>
+			)}
 		</div>
 	);
 }
