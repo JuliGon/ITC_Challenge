@@ -44,7 +44,7 @@ export default function Home({ books: initialBooks }) {
 	}, [initialBooks]);
 
 	return (
-		<div className="container-fluid" style={{paddingBottom: "2.5rem"}}>
+		<div className="container-fluid bg-dark text-light" style={{paddingBottom: "2.5rem"}}>
 			<div className="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
 				{books?.map((e, index) => {
 					return (
