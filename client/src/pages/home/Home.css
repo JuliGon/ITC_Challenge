@@ -3,9 +3,12 @@
 	justify-content: center;
 	align-content: center;
 	flex-direction: column;
-	margin: 2.5rem;
 }
 
+.cards {
+	padding: 0;
+	margin: 0 1rem;
+}
 
 
 

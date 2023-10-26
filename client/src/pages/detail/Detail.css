@@ -3,7 +3,7 @@
   justify-content: center;
   align-content: center;
   flex-direction: column;
-	margin-top: 2.1875rem;
+	margin-top: 2rem;
 }
 
 .sub-container {
@@ -57,9 +57,10 @@
 
 	.img {
 		width: auto;
-		height: 450px;
-		margin-right: 0;
-		align-self: center;
+		height: 450px !important;
+		margin: 0;
+		align-self: center !important;
+		justify-self: center !important;
 	}
 
 	.text-container p:last-child {

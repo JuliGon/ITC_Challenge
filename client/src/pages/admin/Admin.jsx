@@ -161,7 +161,7 @@ export default function Admin() {
 			>
 				<button
 					type="button"
-					className="btn btn-outline-secondary"
+					className="btn btn-outline-secondary d-grid mx-auto"
 					style={{marginTop: "10px"}}
 					onClick={() => setActiveTab("createBook")}
 				>
@@ -196,7 +196,7 @@ export default function Admin() {
 			>
 				<button
 					type="button"
-					className="btn btn-outline-secondary"
+					className="btn btn-outline-secondary d-grid mx-auto"
 					style={{marginTop: "10px"}}
 					onClick={() => setActiveTab("createEditorial")}
 				>

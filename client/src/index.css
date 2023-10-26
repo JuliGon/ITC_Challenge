@@ -8,18 +8,11 @@
   --text-size: 12px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   background-color: var(--background-color) !important;
   color: var(--text-color) !important;
   font-family: var(--text-font) !important;
-  margin: 0;
-  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
