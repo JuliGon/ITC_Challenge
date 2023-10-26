@@ -11,13 +11,14 @@
 	max-width: 7rem !important;
 	max-height: 10.5rem;
 	height: 100%;
+	margin-right: 10px;
 }
 
 .card-title {
 	font-size: 16px;
 	font-weight: 600;
 	height: 1.5rem;
-	margin: 10px !important;
+	margin-top: 10px;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -51,16 +52,18 @@
 
 @media screen and (max-width: 767px) {
 	.card {
-		padding: 15px;
+		padding: 10px;
 		max-width: 10.25rem;
 		min-width: 10.25rem !important;
 		min-height: 18rem;
+		text-align: center;
 	}
 
 	.img-fluid {
-		min-height: 12rem;
-		min-width: 8rem;
+		min-height: 13rem;
+		min-width: 8.75rem;
 		border-radius: 0 !important;
+		margin-right: 0 !important;
 	}
 	
 	.card-title {
@@ -73,7 +76,7 @@
 	}
 
 	.card-price {
-		margin-top: 0;
+		margin-top: -5px;
 		font-size: 16px;
 	}
 
